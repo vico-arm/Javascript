@@ -1,0 +1,30 @@
+console.log("calculadora")
+do{
+var num_1=prompt("Ingrese un numero",1);
+if (num_1<=0 ){
+  console.log("El numero no puede ser menor igual que 0")
+}
+}while(num_1<=0)
+do{
+var num_2=prompt("Ingrese otro numero",1);
+if (num_2<=0){
+  console.log("El numero no puede ser menor igual que 0")
+}
+}while(num_2<=0)
+console.log("Menú")
+console.log("1.Suma")
+console.log("2.Resta")
+console.log("3.Producto")
+console.log("4.División")
+var sw=parseInt(prompt("elejir proceso",1))
+switch(sw){
+  case 1: console.log(num_1+num_2);
+  break;
+  case 2: console.log(num_1-num_2);
+  break;
+  case 3: console.log(num_1*num_2);
+  break;
+  case 4: console.log(num_1/num_2);
+  break;
+  default: console.log("esta no es una opción valida")
+}
